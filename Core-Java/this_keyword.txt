@@ -1,0 +1,45 @@
+/**
+ * Hello
+ */
+
+ // this keyword - represents the current object 
+class Human
+{
+    private int age;         // private variables are accessible in the same class only
+    private String name;
+
+    public int getAge() {
+        return age;                    // private int age - instance variable
+    }
+
+    public void setAge(int age) { // int age - local variable
+        // Human obj1 = new Human();
+        // obj1.age = age;
+        this.age = age; // this is represents a current object called in main
+                   
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        Human obj = new Human();
+        obj.setAge(26);
+        obj.setName("Vijaya");
+        // obj.age = 11;
+        // obj.name = "Vijaya";
+
+        System.out.println(obj.getName() + " : " + obj.getAge());
+        
+
+    }
+}

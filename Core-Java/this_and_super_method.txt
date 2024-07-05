@@ -1,0 +1,52 @@
+/**
+ * Hello
+ */
+
+// this() and super() method
+
+// super() method is used to call the spuerclass constructor
+
+//NOTE: whenever you create an object of a class, subclass obj will call superclass constructor and then subclass constructor
+
+// NOTE: every class in java extends the "object class" in java
+
+class A extends Object
+{
+
+    public A()
+    {
+        super(); 
+        System.out.println("in A");
+    }
+
+    public A(int n)
+    {
+        super(); 
+        System.out.println("in A int");
+    }
+
+}
+
+class B extends A
+{                 
+    public B()
+    {
+        super();                    // super method exist by default in subclasses
+        System.out.println("in B");
+    }
+
+    public B(int n)
+    {
+        this();
+        System.out.println("in B int");
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        B obj = new B(5);
+        
+    }
+}

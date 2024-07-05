@@ -1,0 +1,32 @@
+/**
+ * Hello
+ */
+
+// Anonymous Object
+class A 
+{
+    public A()
+    {
+        System.out.println("object created");
+    }
+
+    public void show()
+    {
+        System.out.println("in A show");
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+        int marks;
+        marks = 99;
+
+        A obj;
+        obj = new A();   // object creation / referenced object
+        obj.show();
+
+        new A();    // Anonymous object
+    }
+}
+

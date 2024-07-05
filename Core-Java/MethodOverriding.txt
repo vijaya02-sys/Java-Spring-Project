@@ -1,0 +1,38 @@
+/**
+ * Hello
+ */
+
+// method overriding
+class A {
+    public void show() {
+        System.out.println("in A show");
+    }
+
+    public void config()
+    {
+        System.out.println("in A config");
+    }
+
+}
+
+class B extends A
+{
+    // method overriding
+    public void show()
+        {
+            System.out.println("in B show");
+        }
+    
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+        B obj = new B();
+        obj.show();
+        obj.config();
+
+
+    }
+}
+

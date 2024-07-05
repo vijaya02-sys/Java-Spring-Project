@@ -1,0 +1,44 @@
+// Encapsulation - binding the data with methods is called encapsulation
+// NOTE : every time you create an instance variables make it private
+
+class Human
+{
+    private int age;         // private variables are accessible in the same class only
+    private String name;
+
+    public int getAge() 
+    {
+        return age;
+    }
+
+    public void setAge(int a)
+    {
+        age = a;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String x) 
+    {
+        name = x;
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        Human obj = new Human();
+        obj.setAge(26);
+        obj.setName("Vijaya");
+        // obj.age = 11;
+        // obj.name = "Vijaya";
+
+        System.out.println(obj.getName() + " : " + obj.getAge());
+        
+
+    }
+}

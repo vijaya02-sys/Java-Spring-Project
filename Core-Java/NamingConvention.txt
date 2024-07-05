@@ -1,0 +1,25 @@
+/**
+ * Hello
+ */
+
+// this() and super() method
+
+// super() method is used to call the spuerclass constructor
+
+//NOTE: whenever you create an object of a class, subclass obj will call superclass constructor and then subclass constructor
+
+// NOTE: every class in java extends the "object class" in java
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+    }
+}
+
+
+// camel casing: showMyMarks(), getAge()
+
+// class and interface - Calc, Runable
+// variables and method - marks, show()
+// constants - PIE, BRAND

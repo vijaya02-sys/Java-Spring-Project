@@ -1,0 +1,100 @@
+// Inner class
+
+class A 
+{
+
+    int age;
+
+    public void show()
+    {
+        System.out.println("in show");
+    }
+
+    // inner class
+    class B {
+        public void config() {
+            System.out.println("in config");
+        }
+    }
+    
+    // static inner class
+    static class C {
+        public void show1() 
+        {
+            System.out.println("in C show");
+        }
+    }
+    
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+       
+        A obj = new A();
+        obj.show();
+
+        A.B obj1 = obj.new B();           // this is the syntax to instantiate an inner class
+        obj1.config();
+        
+        A.C obj2 = new A.C();             // since inner class C is static, we are instantiating the object of the C inner class directly using A class without using object of A.
+        obj2.show1();
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Anonymous Inner class
+
+class A {
+    public void show() {
+        System.out.println("in A show");
+    }
+}
+
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+       
+        A obj = new A()
+        {                                                   // Anonymous inner class
+            public void show()
+            {
+                System.out.println("in new show");
+            }            
+        };
+        obj.show();
+         
+        
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Abstract and Anonymous Inner class
+
+abstract class A {
+    public abstract void show();
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+       
+        A obj = new A() // though class A is an abstract class, we are creating object here only for Anonymous class
+        
+        {                                                   
+            public void show()
+            {
+                System.out.println("in new show");
+            }            
+        };
+        obj.show();
+         
+        
+    }
+}
+
+
+

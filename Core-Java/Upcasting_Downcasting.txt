@@ -1,0 +1,32 @@
+// Upcasting and Downcasting
+
+// Upcasting
+class A {
+    public void show1() {
+        System.out.println("in A show");
+    }
+}
+
+class B extends A 
+{
+    public void show2()
+    {
+        System.out.println("in B show");
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+        //upcasting
+        A obj = new B();
+        obj.show1();
+
+        // downcasting
+        B obj1 = (B) obj; // obj refers to class A but by downcasting it downgrades to child class B
+        
+        obj1.show1();
+        obj1.show2();
+    }
+}
+

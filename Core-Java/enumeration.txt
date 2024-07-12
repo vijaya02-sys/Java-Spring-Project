@@ -1,0 +1,178 @@
+// Enumeration
+
+enum Status
+{
+    Running, Failed, Pending, Success;
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        int i = 5;
+
+        Status x = Status.Running;
+
+        System.out.println(x);
+
+        Status[] ss = Status.values();
+
+        for(Status s : ss)
+        {
+            System.out.println(s + " : " + s.ordinal());
+        }
+       
+    }
+}
+
+
+// Enum if and switch
+
+enum Status {
+    Running, Failed, Pending, Success;
+}
+
+enum Laptop
+{
+    Macbook, XPS, Surface, ThinkPad;
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        int i = 5;
+
+        Status x = Status.Running;
+
+        // Enum class
+        System.out.println(x.getClass().getSuperclass());
+
+        // Enum if else
+        if(x == Status.Running)
+        {
+            System.out.println("All good");
+        }
+        else if(x == Status.Failed)
+        {
+            System.out.println("Try Again");
+        }
+        else if (x == Status.Pending)
+        {
+            System.out.println("Please wait");
+        }
+        else
+        {
+            System.out.println("Done");
+        }
+
+        // Switch
+        switch (x) {
+            case Running:
+                System.out.println("All good");
+                break;
+
+            case Failed:
+                System.out.println("Try Again");
+                break;
+
+            case Pending:
+                System.out.println("Please wait");
+                break;
+        
+            default:
+                System.out.println("Done");
+                break;
+        }
+
+
+        System.out.println(x);
+
+        Status[] ss = Status.values();
+
+        for(Status s : ss)
+        {
+            System.out.println(s + " : " + s.ordinal());
+        }
+       
+    }
+}
+
+// Enum class
+
+enum Status {
+    Running, Failed, Pending, Success;
+}
+
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        int i = 5;
+
+        Status x = Status.Running;
+
+        System.out.println(x.getClass().getSuperclass());
+
+        
+
+        Status[] ss = Status.values();
+
+        for(Status s : ss)
+        {
+            System.out.println(s + " : " + s.ordinal());
+        }
+       
+    }
+}
+
+
+// Enum class
+
+enum Laptop {
+    Macbook(2000), XPS(2200), Surface, ThinkPad(1800);
+
+    private int price;
+
+    private Laptop() 
+    {
+        price = 500;
+    }
+
+    private Laptop(int price) 
+    {
+        this.price = price;
+        System.out.println("in Laptop " + this.name());
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }   
+
+
+}
+
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        // Laptop lap = Laptop.Macbook;
+        // System.out.println(lap + " : " + lap.getPrice());
+
+        for(Laptop lap: Laptop.values())
+        {
+            System.out.println(lap + " : " + lap.getPrice());
+        }
+
+    }
+}
+
+
+
+

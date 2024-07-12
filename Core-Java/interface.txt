@@ -1,0 +1,222 @@
+// What is an Interface - loose coupling
+
+/*
+ * Interface is not a class
+ * By default every method in Interface is public abstract
+ * We can't instantiate an interface
+ * All the variables declared in an interface is by default - " final " and " static "
+ * 
+ * We can implement multiple interfaces in a class at once
+ * 
+ * Q. why variables in interface are final and static by default?
+ * A. i. we don't instantiate interface, we instantiate a class
+ *    ii. we implement interface method rather than extending it
+ *    iii. since we don't implement variables, we keep it static by default
+ *    iv. variables are final by default because ?????????
+ *  
+ * An interface can extend an interface
+ * 
+ * 
+ * class to class -> extends
+ * class to interface -> implements
+ * interface to interface -> extends
+ * 
+ */
+
+
+
+// interface Computer                  // loose coupling
+// {
+//     void config();
+// }
+
+// class Desktop implements Computer
+// {
+//     public void config() {
+//         System.out.println("code compile run: desktop faster");
+//     }
+// }
+
+// class Laptop implements Computer 
+// {
+//     public void config() {
+//         System.out.println("code compile run");
+//     }
+// }
+
+// class Developer 
+// {
+//     public void devApp(Computer comp)
+//     {
+//         comp.config();
+//     }
+// }
+
+// Types of Interface - Normal interface, functional interface, marker interface 
+
+
+interface A {
+    int age = 26; // All the variables declared in an interface is by default - " final " and " static "
+    String area = "Ranchi";
+
+    void show(); // By default every method in Interface is public abstract
+
+    void config();
+}
+
+interface X {
+    void run();
+}
+
+interface Y extends X                       //An interface can extend an interface
+{
+
+}
+
+class B implements A,Y
+{
+    public void show()
+    {
+        System.out.println("in show");
+    }
+
+    public void config()
+    {
+        System.out.println("in config");
+    }
+
+    public void run()
+    {
+        System.out.println("running...");
+    }
+}
+
+
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        // interface Computer
+        // Computer lap = new Laptop();
+        // Computer desk = new Desktop();
+
+        // Developer devlpr = new Developer();
+        // devlpr.devApp(desk);
+ 
+///////////////////////////////////////////////////////////////
+        // interface A
+
+        A obj;               // obj - reference variable for interface A
+        //  obj = new A();       // throws an eroor as interface can't be instantiated
+
+        obj = new B();
+        obj.show();
+        obj.config();
+
+        // obj.run();           // throws an error as obj refers to A
+
+        X obj1;
+        obj1 = new B();
+        obj1.run();
+
+        System.out.println(A.area);
+        // A.area = "Hyderabad";            // throws error as variables in interfaces are final and static
+       
+
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// functional interface
+
+interface A {
+    void show();
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        A obj = new A() {
+            public void show() 
+            {
+                System.out.println("in show");
+            }
+        };
+
+        obj.show();
+    }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// functional interface
+// Lambda Expressions
+
+interface A {
+    void show(int i);
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        // A obj = () ->            
+        //     {
+        //         System.out.println("in show");
+        //     };
+
+
+        // A obj = (int i) ->
+        // {
+        //     System.out.println("in show");
+        // };
+
+        A obj = (int i) -> System.out.println("in show");
+
+        obj.show(5);
+    }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+// functional interface
+// Lambda Expressions with return 
+
+// NOTE: Lambda expression works only with funtional interface
+
+interface A {
+    int add(int i, int j);
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        // A obj = (i, j) -> i + j;
+
+        // A obj = (int i, int j) -> 
+        // {
+        //     return i+j;
+        // };
+
+        A obj = new A() {
+            public int add(int i, int j)
+            {
+                return i + j;
+            }
+        };
+
+        int result = obj.add(5, 4);
+        System.out.println(result);
+    }
+}
+
+
+
+
+

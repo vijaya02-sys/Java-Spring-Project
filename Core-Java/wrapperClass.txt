@@ -1,0 +1,24 @@
+// Wrapper class
+
+// every primitive datatype(int, char, float, double, etc) has its new wrapper class(Integer, Character, Float, Double, etc)
+
+// Auto boxing - keeping primitive data into wrapper class object
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+        int num = 7;
+        Integer num1 = new Integer(8); // crossing line here means depricated feature
+        Integer num2 = 8;
+        Integer num3 = num; // Autoboxing primitive data into wrapper class object as is automatically converting num into an object
+        
+        int a = num3.intValue(); // unboxing -- converting num3 wrapper object into primitive int
+        int b = num3;            // auto-unboxing
+    
+        String str = "12";
+        int x = Integer.parseInt(str);
+
+        System.out.println(x*2);
+    }
+}
+

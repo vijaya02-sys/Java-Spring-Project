@@ -1,0 +1,27 @@
+// Annotations
+
+@Deprecated
+class A {
+    public void showTheDataWhichBelongsToThisClass() {
+        System.out.println("in A show");
+    }
+}
+
+class B extends A 
+{
+    @Override                                    // Annotation
+    public void showTheDataWhichBelongsToThisClass()
+    {
+        System.out.println("in B show");
+    }
+}
+
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+
+        B obj = new B();
+        obj.showTheDataWhichBelongsToThisClass();
+    }
+}

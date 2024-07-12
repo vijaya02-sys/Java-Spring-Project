@@ -1,0 +1,186 @@
+public class Hello {
+
+    public static void main(String args[]) {
+
+        // Collection nums = new ArrayList();
+        // nums.add(6);
+        // nums.add(5);
+        // nums.add(8);
+        // nums.add(2);
+        // nums.add("5");     // this might throw an exception as datatype is not defined in list
+
+        // for(Object n: nums)
+        // {
+        //     int num = (Integer) n;
+        //     System.out.println(num*2);
+        // }
+
+        // Collection<Integer> nums = new ArrayList<Integer>();
+        // nums.add(6);
+        // nums.add(5);
+        // nums.add(8);
+        // nums.add(2);
+        // nums.add("x"); // defining datatype of collection gives compile time error which is easy to resolve
+
+        // for(Integer n: nums)
+        // {
+        //     int num = (Integer) n;
+        //     System.out.println(num * 2);
+        // }
+
+        // List<Integer> nums = new ArrayList<Integer>();
+
+        // nums.add(5);
+        // nums.add(6);
+        // nums.add(7);
+        // nums.add(1);
+        // nums.add(5);
+
+        // Collections.sort(nums);
+        // System.out.println(nums);
+
+        // System.out.println(nums.get(2));
+
+        // System.out.println(nums);
+
+        // Set<Integer> nums = new HashSet<Integer>();
+
+        // nums.add(5);
+        // nums.add(5);
+        // nums.add(6);
+        // nums.add(6);
+        // nums.add(1);
+        // nums.add(1);
+        // nums.add(2);
+
+        // System.out.println(nums);
+
+        // Collection<Integer> nums = new TreeSet<Integer>();
+
+        // nums.add(5);
+        // nums.add(5);
+        // nums.add(6);
+        // nums.add(6);
+        // nums.add(1);
+        // nums.add(1);
+        // nums.add(2);
+
+        // // System.out.println(nums);
+
+        // Iterator<Integer> values = nums.iterator();
+
+        // while (values.hasNext()) {
+        //     System.out.println(values.next());
+        // }
+
+        // Map<String, Integer> students = new Hashtable<>();
+
+        // students.put("Vijaya", 96);
+        // students.put("Divya", 93);
+        // students.put("Nimisha", 95);
+        // students.put("Aryan", 98);
+        // students.put("Om", 100);
+
+        // System.out.println(students.keySet());
+
+        // for (String name : students.keySet())
+        // {
+        //     System.out.println(name + " : " + students.get(name));
+        // }
+
+        // System.out.println();
+
+
+        // COMPARATOR
+
+        // Comparator<Integer> com = new Comparator<Integer>() {
+        //     public int compare(Integer i, Integer j)
+        //     {
+        //         if(i%10 > j%10)
+        //             return 1;
+        //         else
+        //             return -1;
+        //     }
+        // };
+
+        // List<Integer> nums = new ArrayList<Integer>();
+
+        // nums.add(95);
+        // nums.add(86);
+        // nums.add(67);
+        // nums.add(51);
+        // nums.add(45);
+
+        // Collections.sort(nums, com);
+        // System.out.println(nums);
+    
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Collection API
+
+// Collection interface - List, Queue, Set
+
+// COMPARATOR vs COMPARABLE
+
+import java.util.*;
+
+
+class Student implements Comparable<Student>{
+    int age;
+    String name;
+    
+    public Student(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Student [age=" + age + ", name=" + name + "]";
+    }
+
+    public int compareTo(Student that)
+    {
+        if(this.age > that.age)
+            return 1;
+        else
+            return -1;
+    }
+    
+
+}
+
+public class Hello {
+
+    public static void main(String args[]) {        
+
+        // COMPARATOR vs comparable
+
+        Comparator<Student> com = new Comparator<Student>() {
+            public int compare(Student i, Student j)
+            {
+                if(i.age > j.age)
+                    return 1;
+                else
+                    return -1;
+            }
+        };
+
+        List<Student> studs = new ArrayList<>();
+
+        studs.add(new Student(21, "Navin"));
+        studs.add(new Student(12, "John"));
+        studs.add(new Student(18, "Parul"));
+        studs.add(new Student(20, "Kiran"));
+
+        Collections.sort(studs);
+
+        for(Student s: studs)
+        System.out.println(s);
+    
+    }
+}
+

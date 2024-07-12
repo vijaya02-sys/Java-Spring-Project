@@ -1,0 +1,38 @@
+// Abstract keyword - abstract method and abstract class
+
+// rules: 
+// i. abstract method can be declared only in abstract class
+// ii. abstract class can be called without any abstract method and can have only concrete class
+// iii. Extended concrete or abstract class, of existing abstract class, must define abstract method of that parent abstract class
+// iv. all the abstract method initialized in abstract class must be defined in the derived class
+
+// ???can an Abstract class inherit an abstract class abstract method???? - yes
+
+// NOTE : you can not create object of an abstract class but you can create reference of abstract class
+
+abstract class Car {
+    public abstract void drive();
+
+    public void playMusic() {
+        System.out.println("playing Music");
+    }
+}
+
+class WagonR extends Car 
+{
+    public void drive()
+    {
+        System.out.println("Driving");
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+       
+        Car wgnr = new WagonR();
+        wgnr.drive();
+        wgnr.playMusic();
+    }
+}
+

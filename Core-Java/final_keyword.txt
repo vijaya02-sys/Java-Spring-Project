@@ -1,0 +1,85 @@
+// final keyword
+
+// final keyword can be used in - variable, method, class
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// final variable 
+
+// final in java = const in c++  
+// final keyword - once you declare a variable final, you can't change the value of it
+
+
+
+public class Hello {
+
+    // final variable
+    public static void main(String args[]) throws ClassNotFoundException {
+        final int num = 8;
+        num = 9; // will throw error as we can't change the final variable's value
+        
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// final class - if a class is declared as final class it stops the inheritance
+// example of final class
+
+
+final class Calc {
+    public void show() {
+        System.out.println("in Calc show");
+    }
+
+    public void add(int n1, int n2) {
+        System.out.println(n1 + n2);
+    }
+}
+
+class AdvCalc extends Calc                // AdvCalc cannot be final Calc class subclass
+{
+
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+        
+    }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// final method - if a method is declared as final method, then it stops method overriding
+
+class Calc {
+    public final void show() {
+        System.out.println("in Calc show");
+    }
+
+    public void add(int n1, int n2) {
+        System.out.println(n1 + n2);
+    }
+}
+
+class AdvCalc extends Calc                
+{
+    public void show() {                  // cannot override final method show()
+
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws ClassNotFoundException {
+        
+    }
+}
+
+
+
+
+
+

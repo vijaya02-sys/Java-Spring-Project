@@ -1,0 +1,252 @@
+// Multiple Threads
+// Thread Priority and Sleep
+
+class Xyz extends Thread 
+{
+    public void run() {
+        for (int i = 1; i <= 100; i++)
+        {
+            System.out.println("Hi!");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
+        }           
+        
+    }
+}
+
+class Abc extends Thread
+{
+    public void run() {
+        for (int i = 1; i <= 100; i++){
+            System.out.println("Hello!");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }   
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) {
+
+        Xyz obj1 = new Xyz();      // obj1 is now a thread 
+        Abc obj2 = new Abc();
+
+        // System.out.println(obj1.getPriority());
+
+        // obj2.setPriority(Thread.MAX_PRIORITY);
+        obj1.start();
+        obj2.start();
+             
+       
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Multiple Threads
+// Runnable interface v/s Thread class
+
+class Xyz implements Runnable 
+{
+    public void run() {
+        for (int i = 1; i <= 5; i++)
+        {
+            System.out.println("Hi!");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
+        }           
+        
+    }
+}
+
+class Abc implements Runnable 
+{
+    public void run() {
+        for (int i = 1; i <= 5; i++){
+            System.out.println("Hello!");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }   
+    }
+}
+
+public class Hello {
+
+    public static void main(String args[]) {
+
+        Runnable obj1 = new Xyz();      // obj1 is now a Runnable object
+        Runnable obj2 = new Abc();
+
+        // System.out.println(obj1.getPriority());
+
+        // obj2.setPriority(Thread.MAX_PRIORITY);
+
+        Thread t1 = new Thread(obj1);
+        Thread t2 = new Thread(obj2);
+        t1.start();
+        t2.start();
+             
+       
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Multiple Threads
+// Runnable interface using lambda expression as Runnable interface is a functional interface
+
+public class Hello {
+
+    public static void main(String args[]) {
+
+        Runnable obj1 = () -> 
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                System.out.println("Hi!");
+                try {Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}                    
+            }           
+                
+        };      
+        Runnable obj2 = () -> 
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                System.out.println("Hello!");
+                try {Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}                    
+            }           
+                
+        };      
+
+        // System.out.println(obj1.getPriority());
+
+        // obj2.setPriority(Thread.MAX_PRIORITY);
+
+        Thread t1 = new Thread(obj1);
+        Thread t2 = new Thread(obj2);
+        t1.start();
+        t2.start();
+             
+       
+    }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Multiple Threads
+// RACE CONDITION
+
+class Counter 
+{
+    int count;
+
+    public void increment()
+    {
+        count++;
+    }
+
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws InterruptedException {
+
+        Counter c = new Counter();
+
+        Runnable obj1 = () -> 
+        {
+            for(int i = 1; i <= 10000; i++)
+                c.increment();
+        };
+
+        Runnable obj2 = () -> 
+        {
+            for(int i = 1; i <= 10000; i++)
+                c.increment();
+        };
+
+        Thread t1 = new Thread(obj1);
+        Thread t2 = new Thread(obj2);
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println(c.count);
+
+       
+    }
+}
+
+
+NOTE: if we don't use join in above code it will lead to Race condition
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Multiple Threads
+// RACE CONDITION
+
+// Synchronized method
+
+class Counter 
+{
+    int count;
+
+    public synchronized void increment()
+    {
+        count++;
+    }
+
+}
+
+public class Hello {
+
+    public static void main(String args[]) throws InterruptedException {
+
+        Counter c = new Counter();
+
+        Runnable obj1 = () -> 
+        {
+            for(int i = 1; i <= 1000; i++)
+                c.increment();
+        };
+
+        Runnable obj2 = () -> 
+        {
+            for(int i = 1; i <= 1000; i++)
+                c.increment();
+        };
+
+        Thread t1 = new Thread(obj1);
+        Thread t2 = new Thread(obj2);
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println(c.count);
+
+       
+    }
+}
+

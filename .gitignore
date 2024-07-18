@@ -1,0 +1,12 @@
+JUnit5/
+out/
+.idea/
+.idea/.gitignore
+ .idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+ DSA/DSA.iml
+ JAVA-SPRING.iml
+
+
+

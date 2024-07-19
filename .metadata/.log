@@ -1,0 +1,383 @@
+!SESSION 2024-07-19 11:29:23.942 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2024-07-19 11:29:53.387
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-19 11:29:53.387
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76e00bdb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7ee2423,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-19 11:29:53.387
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@343d1d25,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@762da62b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-19 11:29:58.300
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vijaya laxmi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-07-19 11:32:10.451
+!MESSAGE Could not import project located at C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-07-19 11:32:53.098
+!MESSAGE Could not import project located at C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-07-19 11:46:31.451
+!MESSAGE Could not import project located at C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more
+!SESSION 2024-07-19 12:44:00.948 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\vijaya laxmi\OneDrive\Desktop\JAVA-SPRING -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2024-07-19 12:44:08.110
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-19 12:44:08.110
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d5574c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a7a6d34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-19 12:44:08.110
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36871e98,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70d687b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-19 12:44:11.649
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vijaya laxmi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-07-19 13:18:33.072
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/egit/updates/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2024-07-19 13:19:47.093
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2024-07-19 13:19:47.093
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: Server Core" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: Utilities" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: IO Utility" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2024-07-19 13:19:47.093
+!MESSAGE "Apache Commons Logging" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Apache Apache HttpClient OSGi bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Java implementation of Git - optional Http support using Apache httpclient" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Apache Mina SSHD :: OSGi" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Apache Ant" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Bundle com.jcraft : jsch" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: Security" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Java implementation of Git - GPG support using BouncyCastle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: Servlet Handling" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2024-07-19 13:19:47.093
+!MESSAGE "EdDSA-Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "jna" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Apache Apache HttpCore OSGi bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Apache Mina SSHD :: SFTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "jna-platform" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: Utilities :: Ajax(JSON)" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Gson" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2024-07-19 13:19:47.093
+!MESSAGE "XZ data compression" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "OSGi System Bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Java implementation of Git - ssh support using Apache MINA sshd" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.093
+!MESSAGE "Jetty :: Http Utility" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2024-07-19 13:19:47.093
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE Software being installed: OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE Software currently installed: Eclipse RCP 4.22.0.v20211124-1800 (org.eclipse.rcp.feature.group 4.22.0.v20211124-1800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-07-19 13:19:47.093
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE OSGi System Bundle 3.20.0.v20240509-1421 (org.eclipse.osgi 3.20.0.v20240509-1421)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE OSGi System Bundle 3.16.0.v20200828-0759 (org.eclipse.osgi 3.16.0.v20200828-0759)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE OSGi System Bundle 3.17.100.v20211104-1730 (org.eclipse.osgi 3.17.100.v20211104-1730)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-07-19 13:19:47.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE From: Eclipse 4 Rich Client Platform 4.22.0.v20211123-0851 (org.eclipse.e4.rcp.feature.group 4.22.0.v20211123-0851)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.osgi [3.17.100.v20211104-1730,3.17.100.v20211104-1730]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-07-19 13:19:47.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE From: Eclipse RCP 4.22.0.v20211124-1800 (org.eclipse.rcp.feature.group 4.22.0.v20211124-1800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.093
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.e4.rcp.feature.group [4.22.0.v20211123-0851,4.22.0.v20211123-0851]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2024-07-19 13:19:47.106
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2024-07-19 13:19:47.106
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: Server Core" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: Utilities" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: IO Utility" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2024-07-19 13:19:47.106
+!MESSAGE "Apache Commons Logging" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Apache Apache HttpClient OSGi bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Java implementation of Git - optional Http support using Apache httpclient" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Apache Mina SSHD :: OSGi" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Apache Ant" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Bundle com.jcraft : jsch" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: Security" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Java implementation of Git - GPG support using BouncyCastle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: Servlet Handling" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2024-07-19 13:19:47.106
+!MESSAGE "EdDSA-Java" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "jna" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Apache Apache HttpCore OSGi bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Apache Mina SSHD :: SFTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "jna-platform" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: Utilities :: Ajax(JSON)" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Gson" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2024-07-19 13:19:47.106
+!MESSAGE "XZ data compression" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "OSGi System Bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Java implementation of Git - ssh support using Apache MINA sshd" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2024-07-19 13:19:47.106
+!MESSAGE "Jetty :: Http Utility" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2024-07-19 13:19:47.106
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE Software being installed: OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE Software currently installed: Eclipse RCP 4.22.0.v20211124-1800 (org.eclipse.rcp.feature.group 4.22.0.v20211124-1800)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-07-19 13:19:47.106
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE OSGi System Bundle 3.20.0.v20240509-1421 (org.eclipse.osgi 3.20.0.v20240509-1421)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE OSGi System Bundle 3.16.0.v20200828-0759 (org.eclipse.osgi 3.16.0.v20200828-0759)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE OSGi System Bundle 3.17.100.v20211104-1730 (org.eclipse.osgi 3.17.100.v20211104-1730)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-07-19 13:19:47.106
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE From: Eclipse 4 Rich Client Platform 4.22.0.v20211123-0851 (org.eclipse.e4.rcp.feature.group 4.22.0.v20211123-0851)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.osgi [3.17.100.v20211104-1730,3.17.100.v20211104-1730]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-07-19 13:19:47.106
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE From: Eclipse RCP 4.22.0.v20211124-1800 (org.eclipse.rcp.feature.group 4.22.0.v20211124-1800)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-07-19 13:19:47.106
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.e4.rcp.feature.group [4.22.0.v20211123-0851,4.22.0.v20211123-0851]
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-19 13:34:05.612
+!MESSAGE An exception occurred during push on URI https://github.com/vijaya02-sys/Java-Spring-Project.git: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:147)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1384)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:137)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-07-19 13:34:05.616
+!MESSAGE Can't connect to any repository: https://github.com/vijaya02-sys/Java-Spring-Project.git (https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-19 13:37:32.680
+!MESSAGE An exception occurred during push on URI https://github.com/vijaya02-sys/Java-Spring-Project.git: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1384)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:210)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-19 13:53:55.731
+!MESSAGE An exception occurred during push on URI https://github.com/vijaya02-sys/Java-Spring-Project.git: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1384)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:210)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-19 13:54:33.638
+!MESSAGE An exception occurred during push on URI https://github.com/vijaya02-sys/Java-Spring-Project.git: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/vijaya02-sys/Java-Spring-Project.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1384)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:210)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
